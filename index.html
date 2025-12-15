@@ -3,57 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ApexPlanet || Task 2</title>
-  <link rel="stylesheet" href="style.css">
+  <title>ApexPlanet Task 2</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h2>ApexPlanet Software Pvt. Ltd</h2>
-  </header>
+<header>
+  ApexPlanet Software Pvt. Ltd
+</header>
 
-  <section class="container">
+<section class="container">
 
-    <!-- Contact Form -->
-    <div class="card" id="contact">
-      <h2>Contact Form</h2>
+  <!-- CONTACT FORM -->
+  <div class="card">
+    <h2>Contact Form</h2>
 
-      <input id="name" type="text" placeholder="Your Name">
-      <div id="nameErr" class="error"></div>
+    <input id="name" type="text" placeholder="Your Name">
+    <div id="nameErr" class="error"></div>
 
-      <input id="email" type="email" placeholder="Email">
-      <div id="emailErr" class="error"></div>
+    <input id="email" type="email" placeholder="Email">
+    <div id="emailErr" class="error"></div>
 
-      <textarea id="msg" placeholder="Message"></textarea>
-      <div id="msgErr" class="error"></div>
+    <textarea id="msg" placeholder="Message"></textarea>
+    <div id="msgErr" class="error"></div>
 
-      <button onclick="submitForm()">Submit</button>
-      <div id="successMsg" class="success"></div>
+    <button onclick="submitForm()">Submit</button>
+    <div id="successMsg" class="success"></div>
+  </div>
+
+  <!-- TODO LIST -->
+  <div class="card">
+    <h2>To‑Do List</h2>
+
+    <input id="taskInput" type="text" placeholder="Add new task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul class="todo-list" id="taskList"></ul>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="card">
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600"  alt="">
+      <img src="https://images.unsplash.com/photo-1511108690759-009324a90311?w=600" alt="">
+      <img src="https://images.unsplash.com/photo-1535398089889-dd807df1dfaa?w=600" alt="">
+      <img src="https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=600" alt="">
     </div>
+  </div>
 
-    <!-- Task Manager -->
-    <div class="card" id="todo">
-      <h2>Task Manager</h2>
+</section>
 
-      <input id="taskInput" type="text" placeholder="Add task">
-      <button onclick="addTask()">Add Task</button>
+<footer>
+  © 2025 ApexPlanet Software Pvt. Ltd | Task 2 Project
+</footer>
 
-      <ul class="todo-list" id="taskList"></ul>
-    </div>
-
-    <!-- Image Gallery -->
-    <div class="card" id="gallery">
-      <h2>Image Gallery</h2>
-
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1671774637925-c11dd0051b60?w=600" alt="Book">
-        <img src="https://images.unsplash.com/photo-1641260199871-1c7145f3fc3b?w=600" alt="Book">
-        <img src="https://images.unsplash.com/photo-1641154711017-1a38cf33e508?w=600" alt="Book">
-        <img src="https://images.unsplash.com/photo-1619872553215-8ac017d003f4?w=600" alt="Book">
-      </div>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
